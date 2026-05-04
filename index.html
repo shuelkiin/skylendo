@@ -974,6 +974,170 @@
     from { transform: translateX(-100%); }
     to { transform: translateX(0); }
   }
+  /* =========================
+   RESPONSIVE MAGIC ✨
+   ========================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+
+  nav {
+    padding: 16px 30px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  #about {
+    grid-template-columns: 1fr;
+    gap: 60px;
+    padding: 100px 30px;
+  }
+
+  .about-images {
+    height: 400px;
+  }
+
+  .stats-bar {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+  }
+
+  .destinations-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .dest-card:first-child {
+    grid-row: auto;
+  }
+
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .packages-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .booking-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+
+  body {
+    cursor: default;
+  }
+
+  .cursor,
+  .cursor-trail {
+    display: none;
+  }
+
+  nav {
+    padding: 14px 20px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  #hero {
+    height: 90vh;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-sub {
+    font-size: 1rem;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+  }
+
+  .stats-bar {
+    grid-template-columns: 1fr;
+  }
+
+  #about {
+    padding: 80px 20px;
+  }
+
+  .feature-list {
+    grid-template-columns: 1fr;
+  }
+
+  #destinations {
+    padding: 80px 20px;
+  }
+
+  .destinations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #wildlife {
+    padding: 80px 20px;
+  }
+
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #packages {
+    padding: 80px 20px;
+  }
+
+  .packages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #testimonials {
+    padding: 80px 20px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #booking {
+    padding: 80px 20px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    padding: 60px 20px 30px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}
 </style>
 </head>
 <body>
